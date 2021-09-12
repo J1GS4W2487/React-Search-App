@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  display : flex;
+
+  background-image: url("./img/login.png");
+
+}
+.text{
+font-size: 20px;
+}
+.texts{
+  font-size: 80px;
+  color: white;
+  }
+
+#pics{
+  background-color: gold;
+  font-size:20px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.myForm1{
+  width: 40%;
+  background-color:rgb(12, 103, 240);
+  border: 5px;
+  padding: 30px;
+  border-left: 10px;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-bottom: 120px;
+}
+
+.myButton{
+  width: 100%;
+  background-color: rgb(24, 168, 24);
+  color: WHITE;
+  border: 4px;
+  cursor: pointer;
+  font-weight: 400px;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 10px solid;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.myButton:hover{
+  width: 100%;
+  background-color: gold;
+  color: rgb(33, 211, 33);
+  border: 4px;
+  cursor: pointer;
+  font-weight: 400px;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 10px solid;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.4s ease-in-out;
+
+}
+
+
+.formField1{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 10px solid;
+  box-sizing: border-box;
+}
+
+ .jignesh{
+      color: green;
+    }
+.amay{
+      color: blue;
+    }
+ .sbuttons{
+    width:200px;
+    height:auto;
+    display:inline-block;
+    margin-left:38px;
+    margin-right:40px;
+    background-color:orangered;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .title{
+    display: inline-block;
+  
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+  
+  }
+
+  .logins{
+    color: white;
+  }
+  .topnav {
+    width: 100%;
+    align-items: right;
+    font-size: 10px;
+     padding:10px;
+     display: inline-block;
+     background-color: #ff4500;
+     color:white;
+     
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color:orange;
+    color: black;
+    transition: all 0.4s ease-in-out;
+
+  }
+  
+
+  .title{
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 90px;
+  
+
+}
+  .topnav-right {
+    float: right;
+  }
