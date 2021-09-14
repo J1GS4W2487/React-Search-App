@@ -37,6 +37,7 @@ font-size: 20px;
 
 .myButton{
   width: 100%;
+  text-decoration: none;
   background-color: rgb(24, 168, 24);
   color: WHITE;
   border: 4px;

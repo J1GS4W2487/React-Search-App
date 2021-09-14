@@ -4,12 +4,11 @@ import { Button} from 'react-bootstrap';
 import {BrowserRouter, Router} from "react-router-dom";
 import {Switch, Link, Route} from 'react-router-dom';
 import Navbar from './Navbar'
+import disableBrowserBackButton from 'disable-browser-back-navigation';
 
-//  function Mountains(){
-//   var hi = "Mountain";
-// 	document.getElementById("m").value = hi;
-// }
+
 const Search = () => {
+  disableBrowserBackButton();
   const [filter, setFilter] = useState('Mountain');
   const searchText =(event)=>{
     if(searchText === " ")
