@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Switch, Link, Route} from 'react-router-dom';
-export class Navbar extends Component {
-    render(){
+import {Switch, Link, Route, useHistory, withRouter} from 'react-router-dom';
+import Register from './Register';
+import Login from './Login';
+const Navbar =()=> {
+  const history= useHistory();
+ 
+   
+      const logout=()=>{
+        localStorage.clear()
+        history.push('/')
+      }
       return(
       <>
 
@@ -10,14 +18,14 @@ export class Navbar extends Component {
           <div class="topnav">
             <Link to="/" className="title">PICSEARCH</Link>
             <div class="topnav-right">
-            <Link to="/login">User</Link>
-               <Link to="/login">Login</Link>
+     
+               <button onclick={logout()}>Logout</button>
             </div>
           </div>
 
 </>
       )
     }
-}
 
-export default Navbar;
+
+export default withRouter(Navbar);

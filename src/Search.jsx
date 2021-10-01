@@ -1,14 +1,16 @@
 import React, {useState,Component} from 'react';
 import Data from './Data';
 import { Button} from 'react-bootstrap';
-import {BrowserRouter, Router} from "react-router-dom";
-import {Switch, Link, Route} from 'react-router-dom';
+
+import {Switch, Link, Route,  useHistory, withRouter, BrowserRouter} from 'react-router-dom';
 import Navbar from './Navbar'
 import disableBrowserBackButton from 'disable-browser-back-navigation';
 
 
 const Search = () => {
-  disableBrowserBackButton();
+  // disableBrowserBackButton();
+  const history= useHistory();
+
   const [filter, setFilter] = useState('Mountain');
   const searchText =(event)=>{
     if(searchText === " ")
@@ -74,4 +76,5 @@ const Search = () => {
     )
 }
 
-export default Search;
+
+export default withRouter(Search);

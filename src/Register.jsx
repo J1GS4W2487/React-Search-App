@@ -1,16 +1,19 @@
 import React,  { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory,withRouter} from 'react-router-dom';
 import './App.css';
 import disableBrowserBackButton from 'disable-browser-back-navigation';
 
 
 class Register extends Component {
 
+ 
+  
   DATA;
 
   constructor(props) 
   
   {
+
     
       super(props);
       this.eventName = this.eventName.bind(this);
@@ -102,6 +105,7 @@ class Register extends Component {
               password: ''
           })
       }
+
  var myData = localStorage.getItem('contact_form');
       console.log(myData);
   
@@ -119,6 +123,7 @@ class Register extends Component {
   }
     
     render() {
+  
      
       var logindata = this.state.logindata;
       return (
@@ -130,8 +135,12 @@ class Register extends Component {
             <input type="text"  id="admin" placeholder="email" className="formField1"  value={this.state.email} onChange={this.eventEmail}/>
             <input type="password" id="password" placeholder="password" className="formField1" value={this.state.password} onChange={this.eventPassword}/>
             <input type="text" id="name" placeholder="Name" className="formField1"  value={this.state.name} onChange={this.eventName}/>
-       
-            <button type="submit"  onClick={(event)=>this.onFormSubmitn(event)} className="myButton">SUBMIT</button>  
+           
+            <button type="submit"  onClick={(event)=>this.onFormSubmit(event)} className="myButton">SUBMIT</button>
+            <br/>
+            <br/>
+            <Link to="/search" className="myButton">LOGIN </Link>
+          
           </form>
        
         </div>
@@ -140,5 +149,4 @@ class Register extends Component {
     }
 }
 
-export default Register;
-
+export default withRouter(Register);
